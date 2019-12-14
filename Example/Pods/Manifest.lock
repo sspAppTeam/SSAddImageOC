@@ -1,0 +1,33 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - SDWebImage (5.4.0):
+    - SDWebImage/Core (= 5.4.0)
+  - SDWebImage/Core (5.4.0)
+  - SSAddImage (0.1.0):
+    - SDWebImage
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - SSAddImage (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  SSAddImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
+  SSAddImage: d113157f7a64787695998442acc5f6fbe018a648
+
+PODFILE CHECKSUM: ab485c1ab9852a4827db7fea69d61bb69a992e38
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,6 @@
+framework module SSAddImage {
+  umbrella header "SSAddImage-umbrella.h"
+
+  export *
+  module * { export * }
+}

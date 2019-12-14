@@ -1,0 +1,32 @@
+{
+  "name": "SSAddImage",
+  "version": "0.1.0",
+  "summary": "A short description of SSAddImage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SSPSource/SSAddImage",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SSPSource": "2316585240@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/SSPSource/SSAddImage.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SSAddImage/Classes/**/*",
+  "resource_bundles": {
+    "SSAddImage": [
+      "SSAddImage/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "SDWebImage": [
+
+    ]
+  }
+}

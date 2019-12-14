@@ -1,0 +1,6 @@
+framework module Pods_SSAddImage_Example {
+  umbrella header "Pods-SSAddImage_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

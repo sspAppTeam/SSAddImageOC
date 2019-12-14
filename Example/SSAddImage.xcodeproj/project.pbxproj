@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0895F424D29E0F5A023EF6CD /* SSAddImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SSAddImage.podspec; path = ../SSAddImage.podspec; sourceTree = "<group>"; };
-		1F3B83AA2C9371244450C1DD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0895F424D29E0F5A023EF6CD /* SSAddImage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SSAddImage.podspec; path = ../SSAddImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F3B83AA2C9371244450C1DD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2E28C4BF00F623CCFEABA370 /* Pods-SSAddImage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAddImage_Example.debug.xcconfig"; path = "Target Support Files/Pods-SSAddImage_Example/Pods-SSAddImage_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SSAddImage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAddImage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91B9B52E3362D42B5F260AF0 /* Pods-SSAddImage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAddImage_Example.release.xcconfig"; path = "Target Support Files/Pods-SSAddImage_Example/Pods-SSAddImage_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AAFD6CBA5BB3F52A5FC43C21 /* Pods-SSAddImage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAddImage_Tests.release.xcconfig"; path = "Target Support Files/Pods-SSAddImage_Tests/Pods-SSAddImage_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CB712005FBDC56B002F8503C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CB712005FBDC56B002F8503C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DFD3B89D3407ACED12434FB8 /* Pods_SSAddImage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSAddImage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3BC5BBEEEF5BDA9F419755 /* Pods-SSAddImage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAddImage_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SSAddImage_Tests/Pods-SSAddImage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				EC3BC5BBEEEF5BDA9F419755 /* Pods-SSAddImage_Tests.debug.xcconfig */,
 				AAFD6CBA5BB3F52A5FC43C21 /* Pods-SSAddImage_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = SSPSource;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 57FD26NT87;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +306,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SSAddImage_Example/Pods-SSAddImage_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SSAddImage/SSAddImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSAddImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +518,7 @@
 			baseConfigurationReference = 2E28C4BF00F623CCFEABA370 /* Pods-SSAddImage_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57FD26NT87;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SSAddImage/SSAddImage-Prefix.pch";
 				INFOPLIST_FILE = "SSAddImage/SSAddImage-Info.plist";
@@ -529,6 +535,7 @@
 			baseConfigurationReference = 91B9B52E3362D42B5F260AF0 /* Pods-SSAddImage_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 57FD26NT87;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SSAddImage/SSAddImage-Prefix.pch";
 				INFOPLIST_FILE = "SSAddImage/SSAddImage-Info.plist";
